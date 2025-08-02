@@ -1,0 +1,185 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{% static 'css/style.css'%}" />
+  <link rel="stylesheet" href="{% static 'bootstrap.min.css'%}" />
+  <link rel="stylesheet" href="{% static 'ihover.css'%}" />
+  <link rel="stylesheet" href="{% static 'hover.css'%}" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>CAR PROJECT</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+
+        <a class="navbar-brand" href="#"><b class="fs-3 text-light">MORDO</b> <i class="fa-solid fa-car-side fa-2xl"
+            style="color: #f11404;"></i><b class="fs-3 text-light">CAR</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link fs-5 text-light hvr-shrink" href="/index2">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5 text-light hvr-shrink" href="/index3">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5 text-light hvr-shrink" href="/index4">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5 text-light hvr-shrink" href="/index5">Appointment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5 text-light hvr-shrink" href="/index">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5 text-light hvr-shrink" href="http://127.0.0.1:8000/admin">Admin</a>
+            </li>
+           
+            
+
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+  </header>
+  {%block content%} {%endblock%}
+
+  <div class="container-fluid bg-primary">
+
+    <footer class="text-white text-center text-lg-start bg-primary">
+      <div class="container-fluid p-4">
+        <div class="row mt-4">
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <a class="navbar-brand" href="#"><b class="fs-2 text-light">MORDO</b> <i
+                class="fa-solid fa-car-side fa-2xl fs-1" style="color: #f11404;"></i><b
+                class="fs-1 text-light">CAR</b></a><br><br><br>
+            <h5 class="text-uppercase mb-4">About company</h5>
+
+            <p>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+              voluptatum deleniti atque corrupti.
+            </p>
+
+            <p>
+              Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
+              molestias.
+            </p>
+
+            <div class="mt-4">
+              <a href="https://www.facebook.com/" type="button" class="btn btn-floating btn-light btn-lg"><i
+                  class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/" type="button" class="btn btn-floating btn-light btn-lg"><i
+                  class="fab fa-instagram"></i></a>
+              <a href="https://x.com/" type="button" class="btn btn-floating btn-light btn-lg"><i
+                  class="fab fa-twitter"></i></a>
+              <a href="https://www.google.co.in/" type="button" class="btn btn-floating btn-light btn-lg"><i
+                  class="fab fa-google-plus-g"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+
+            <div class="form-outline form-white mb-4">
+              <input type="text" id="formControlLg" class="form-control form-control-lg" />
+              <label class="form-label" for="formControlLg">Search</label>
+            </div>
+
+            <ul class="fa-ul" style="margin-left: 1.65em;">
+              <li class="mb-3">
+                <a href="https://maps.app.goo.gl/Pr497jqgruXUsLGf9" class="text-light link-underline-primary"><span
+                    class="fa-li"><i class="fas fa-home"></i></span><span
+                    class="ms-2">Kanganpur,Sirsa(Haryana)</span></a>
+
+              </li>
+              <li class="mb-3">
+                <a href="https://accounts.google.com/InteractiveLogin/signinchooser?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&osid=1&passive=1209600&service=mail&ifkv=Ab5oB3rFnpOoeyjHdWzgDgx9G8Qflg9f-HIyiiP5ehqjIEM6ywh5bmBDdwFhUDQ_qp_rmINkJ9WDKw&ddm=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+                  class="text-light link-underline-primary"><span class="fa-li"><i
+                      class="fas fa-envelope"></i></span><span class="ms-2">abhiikumar@gmail.com</span></a>
+              </li>
+              <li class="mb-3">
+                <a href="" class="text-light link-underline-primary"><span class="fa-li"><i
+                      class="fas fa-phone"></i></span><span class="ms-2"> 7206953370</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+            <table class="table text-center text-white">
+              <tbody class="fw-normal" bgcolor="primary">
+                <tr>
+                  <td>Mon - Thu:</td>
+                  <td>8am - 9pm</td>
+                </tr>
+                <tr>
+                  <td>Fri - Sat:</td>
+                  <td>8am - 1am</td>
+                </tr>
+                <tr>
+                  <td>Sunday:</td>
+                  <td>9am - 10pm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+  integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+  integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 3
+      },
+      1000: {
+        items: 5
+      }
+    }
+  })
+
+</script>
+<script>
+  AOS.init();
+</script>
+
+</html>

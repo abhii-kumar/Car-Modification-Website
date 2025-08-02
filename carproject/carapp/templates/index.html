@@ -1,0 +1,112 @@
+{%extends 'hefo.html'%}
+{%load static%}
+{%block content%}
+<main>
+  <!-- 1st section -->
+  <section>
+
+    <div class="card text-bg-light">
+      <img src="{% static 'img/6.jpg'%}" class="card-img" alt="" style="width: 100%; height:60vh;">
+
+      <div class="card-img-overlay">
+        <h1 class="card-title position-absolute bottom-0 start-50 translate-middle-x text-dark">CONTACT US</h1>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-1 col-md-1">
+      </div>
+      <div class="col-xl-6 col-md-6">
+        <br>
+        <a href="/index2" class="text-dark text-center"><b>HOME</b></a>>CONTACT US
+
+      </div>
+    </div><br>
+    <div class="row">
+      <div class="col-xl-1 col-md-1">
+      </div>
+      <div class="col-xl-6 col-md-6 ">
+        <br>
+        <br><br>
+        <h3><b>Send Message Us
+          </b></h3><br><br>
+
+
+
+        <form action="{% url 'insertcontact' %}" method="post">
+          {%csrf_token%}
+
+         
+          <div class="row">
+            <div class="col-xl-6 col-md-6">
+              <div class="mb-3"><br>
+                <input type="text" class="form-control bg-secondary fs-5" id="exampleInputPassword1"
+                  placeholder="Your Name" Name="name"><br><br>
+                <input type="tel" class="form-control bg-secondary fs-5" id="exampleInputPassword1" placeholder="Phone"
+                  name="phone">
+              </div>
+
+
+            </div>
+            <div class="col-xl-6 col-md-6">
+
+              <div class="mb-3"><br>
+                <input type="email" class="form-control bg-secondary fs-5" id="exampleInputPassword1"
+                  placeholder="Your Email id" name="email"><br><br>
+                <input type="text" class="form-control bg-secondary fs-5" id="exampleInputPassword1"
+                  placeholder="Subject" name="subject"><br>
+              </div>
+            </div>
+          
+            <div class="container"> <input type="textarea" class="form-control bg-secondary fs-5 mb-5" id="exampleInputPassword1"
+              placeholder="Message..." name="message"></div>
+            <button type="submit" class="btn btn-outline-light mb-3 bg-primary">
+              <h3>Send</h3>
+            </button><br><br>
+          </div>
+
+        </form>
+      </div>
+      <div class="col-xl-5 col-md-5 p-5"><br>
+        <div class="card text end" style="width: 25rem;">
+          <div class="card-body px-5 ">
+            <b class="card-title fs-4 text-danger">QUICK CONTACT</b>
+            <p class="card-text">If you have any questions simply use the following contact details.</p>
+            <a href="https://maps.app.goo.gl/Pr497jqgruXUsLGf9" type="button" class="btn btn-floating btn-light btn-lg"><i
+                class="fa-solid fa-location-dot fa-xl"></i></a> <b>ADDRESS</b>
+            <p class="ms-5 mb-2">kanganpur road,sirsa</p>
+            <a href="https://accounts.google.com/InteractiveLogin/signinchooser?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&osid=1&passive=1209600&service=mail&ifkv=Ab5oB3rFnpOoeyjHdWzgDgx9G8Qflg9f-HIyiiP5ehqjIEM6ywh5bmBDdwFhUDQ_qp_rmINkJ9WDKw&ddm=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin"" type="button" class="btn btn-floating btn-light btn-lg"><i
+                class="fa-solid fa-envelope fa-xl"></i></a> <b>EMAIL</b>
+            <p class="ms-5 mb-2">abhiikumar@gmail.com</p>
+            <a href="" type="button" class="btn btn-floating btn-light btn-lg"><i class="fa-solid fa-phone fa-xl"></i></a> <b>PHONE</b>
+            <p class="ms-5 mb-2">7206953370</p>
+
+            <div class="mt-4">
+              <a href="https://www.facebook.com/" type="button" class="btn btn-floating btn-danger btn-lg"><i
+                  class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/" type="button" class="btn btn-floating btn-danger btn-lg"><i
+                  class="fab fa-instagram"></i></a>
+              <a href="https://x.com/" type="button" class="btn btn-floating btn-danger btn-lg"><i
+                  class="fab fa-twitter"></i></a>
+              <a href="https://www.google.co.in/" type="button" class="btn btn-floating btn-danger btn-lg"><i
+                  class="fab fa-google-plus-g"></i></a>
+            </div </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <h2 class="mx-5">Location & Hours</h2>
+        <p>
+        <h6 class="mx-5">Kanganpur road,Sirsa,Haryana</h6>
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6943.521658160021!2d75.04900514278805!3d29.52332985076024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39114ddbe39e79db%3A0x637a4f8a42794357!2sKanganpur%2C%20Sirsa%2C%20Haryana%20125055!5e0!3m2!1sen!2sin!4v1722668503475!5m2!1sen!2sin"
+          width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      </div>
+  </section><br><br><br><br><br><br>
+
+</main>
+{%endblock%}

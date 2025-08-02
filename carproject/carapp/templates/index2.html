@@ -1,0 +1,609 @@
+{%extends 'hefo.html'%}
+{%load static%}
+{%block content%}
+<main>
+    <section>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{% static 'img/x2.jpg'%}"
+                        class="d-block w-100 h-100" data-aos="fade-left" alt="..." />
+                    <div
+                        class="carousel-caption d-none d-md-block text-start position-absolute top-50 start-20 translate-middle-y ">
+                        <h1>MAKES YOU CAR LAST LONGER</h1>
+                        <p>
+                        <h5 class="hvr-pulse-shrink">
+                            There are many variations of passages of Lorem Ipsum
+                            typesetting industry. Lorem Ipsum has been the industry's
+                            standard dummy text ever since the when an unknown printer
+                            took a galley of type and scrambled
+                        </h5>
+                        </p>
+                        <a href="/index3"> <button class="btn btn-outline-dark" style="background-color: #fa0522;">
+                                <h5 class="text-light">READ MORE</h5>
+                            </button>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'img/x3.jpg'%}"
+                        class="d-block w-100" data-aos="fade-left" alt="..." />
+                    <div
+                        class="carousel-caption d-none d-md-block text-start position-absolute top-50 start-20 translate-middle-y">
+                        <h1>FIND YOUR NEXT MATCH</h1>
+                        <p>
+                        <h5 class="hvr-pulse-shrink">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Asperiores, minus nulla!
+                            Voluptates harum
+                            unde distinctio consequuntur, rem sed consequatur beatae sit voluptatem sint temporibus
+                            earum quisquam
+                            provident velit fuga at?
+
+                        </h5>
+                        </p>
+                        <a href="/index3"> <button class="btn btn-outline-dark" style="background-color: #fa0522;">
+                                <h5 class="text-light">READ MORE</h5>
+                            </button>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'img/x1.jpg.jpg'%}"
+                        class="d-block w-100" data-aos="fade-left" alt="..." />
+                    <div
+                        class="carousel-caption d-none d-md-block text-start position-absolute top-50 start-20 translate-middle-y">
+                        <h1>FIND YOUR DREAM CAR</h1>
+                        <p>
+                        <H5 class="hvr-pulse-shrink">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam,
+                            facilis! Doloremque
+                            eos voluptatum
+                            tempore. Consequuntur obcaecati beatae similique corporis aliquam, fugiat dolor qui
+                            nobis dignissimos
+                            incidunt unde, eaque, exercitationem ea.</H5>
+                        </p>
+                        <a href="/index3"> <button class="btn btn-outline-dark" style="background-color: #fa0522;">
+                                <h5 class="text-light">READ MORE</h5>
+                            </button>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- 2nd section   -->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-xl-1 col-md-1 py-4">
+
+                </div>
+                <div class="col-xl-1 col-md-1">
+                    <h1 class="py-5"><i class="fa-sharp-duotone fa-solid fa-house-chimney fa-beat-fade fa-2xl text-primary"
+                            ></i></h1>
+
+                </div>
+                <div class="col-xl-3 col-md-3 text-danger"><br>
+                    <h3 class="px-4 py-1">MEET & ASK</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, a!</p>
+
+                </div>
+                <div class="col-xl-2 col-md-2"></div>
+                <div class="col-xl-3 col-md-3 py-5">
+                    <a href="/index"><button class="btn btn-outline-dark btn-primary text-light">
+                            <h5>CONTACT US</h5>
+                        </button></a>
+                    <a href="/index3"><button class="btn btn-outline-dark btn-primary text-light">
+                            <h5>VIEW MORE</h5>
+                        </button></a>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <br><br>
+    <!-- 3rd section -->
+    <section>
+        <div class=" row">
+            <div class="col-xl-1 col-md-1 py-4">
+            </div>
+
+            <div class="col-xl-6 col-md-6 py-4">
+                <h4>CAR <span class="text-danger">POLISH</span></h4>
+                <h6>Innovation & Adoption</h6><br>
+                <p>There are many variations of passages of Lorem Ipsum typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    It has survived not only five centuries, but also the leap into electronic
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing..
+
+                </p>
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 py-4">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body"><br>
+                                <h1 class="card-title text-center"><i
+                                        class="fa-solid fa-user p-4 bg-danger rounded-circle"></i></h5>
+                                    <h3 class="text-center text-danger">1800+</h3>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary text-center">
+                                        Engineers & Workers</h6>
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="col-xl-4 col-md-4 py-4">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body"><br>
+                                <h1 class="card-title text-center"><i
+                                        class="fa-solid fa-house  p-4 bg-danger rounded-circle"></i>
+                                </h1>
+                                <h3 class="text-center text-danger">1500+</h3>
+                                <h6 class="card-subtitle mb-2 text-body-secondary text-center">Factory
+                                    In Worldwide</h6>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="col-xl-4 col-md-4 py-4 px-4">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body"><br>
+                                <h1 class="card-title text-center"><i
+                                        class="fa-solid fa-hard-drive p-4 bg-danger rounded-circle"></i>
+                                </h1>
+                                <h3 class="text-center text-danger">1200+</h3>
+                                <h6 class="card-subtitle mb-2 text-body-secondary text-center">Projects
+                                    Completed</h6>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <p>There are many variations of passages of Lorem Ipsum typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the.
+
+                    There are many variations of passages of Lorem Ipsum typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the.
+
+                    Re</p>
+                <a href="/index3"><button class="btn btn-outline-dark btn-dark text-light bg-primary hvr-shrink">
+                        <h5>READ MORE</h5>
+                    </button></a>
+
+            </div>
+            <div class="col-xl-1 col-md-1">
+            </div>
+            <div class="col-4 py-4 px-4" data-aos="fade-left">
+                <img src="https://autocare.dexignlab.com/xhtml/images/img2.jpg" alt="">
+            </div>
+        </div>
+        <div class="row p-3 bg-light">
+            <div class="p-5 text-center"><b class="mx-5 fs-2 p-3">MAKE AN APPOINTMENT NOW WITH OUR ONLINE FORM <a
+                        href="/index5"><button class="btn btn-outline-dark btn-dark text-light hvr-shrink mb-1" style="background-color: #fa0522;">
+                            <h4>MAKE AN APPOINTMENT</h4>
+                        </button></a>
+                </b></div>
+        </div>
+    </section>
+    <!-- 4th section -->
+    <section>
+        <div class="row bg-dark py-5 px-5">
+            <h1 class="text-center text-light"> OUR PROJECTS</h1>
+            <h5 class="text-center texti-info"><i class="fa-solid fa-pallet" style="color: #FFD43B;"></i><i
+                    class="fa-solid fa-pallet" style="color: #FFD43B;"></i><i class="fa-solid fa-pallet"
+                    style="color: #FFD43B;"></i><i class="fa-solid fa-pallet" style="color: #FFD43B;"></i><i
+                    class="fa-solid fa-pallet" style="color: #FFD43B;"></i><i class="fa-solid fa-circle fa-xl"
+                    style="color: #fd0808;"></i><i class="fa-solid fa-pallet" style="color: #FFD43B;"></i><i
+                    class="fa-solid fa-pallet" style="color: #FFD43B;"></i><i class="fa-solid fa-pallet"
+                    style="color: #FFD43B;"></i><i class="fa-solid fa-pallet" style="color: #FFD43B;"></i><i
+                    class="fa-solid fa-pallet" style="color: #FFD43B;"></i></h5>
+
+            <p class="text-light text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias
+                consequatur
+                dignissimos facilis, magni accusantium sint rem a! Sed doloremque voluptates quisquam illum, error
+                corrupti ad enim molestiae neque beatae recusandae sequi ut accusamus rem eum magni perferendis sint
+                illo deserunt!</p>
+
+            <div class="col-xl-2 col-md-2">
+
+            </div>
+            <div class="col-xl-8 col-md-8 text-center">
+                <a href="/index3"><button class="btn btn-outline-dark btn-dark text-light bg-danger hvr-shrink">
+                        <h6>SHOW ALL</h6>
+                    </button></a>
+                <a href="/index3"><button class="btn btn-outline-dark btn-dark text-light bg-danger hvr-shrink">
+                        <h6>BRAKES</h6>
+                    </button></a>
+                <a href="/index3"><button class="btn btn-outline-dark btn-dark text-light bg-danger hvr-shrink">
+                        <h6>SUSPENSION</h6>
+                    </button></a>
+                <a href="/index3"><button class="btn btn-outline-dark btn-dark text-light bg-danger hvr-shrink">
+                        <h6>WHEELS</h6>
+                    </button></a>
+                <a href="/index3"><button class="btn btn-outline-dark btn-dark text-light bg-danger hvr-shrink">
+                        <h6>STEERING</h6>
+                    </button></a>
+            </div>
+            <div class="col-xl-2 col-md-2">
+
+            </div>
+        </div>
+        <div class="row bg-dark px-5">
+            <div class="col-1"></div>
+            <div class="col-xl-10 col-md-10 py-2 px-2 ">
+                <a> <img src="https://autocare.dexignlab.com/xhtml/images/our-work/pic1.jpg" alt="" width="32%"
+                        class="px-1 hvr-shrink"></a>
+
+
+                <a> <img src="https://autocare.dexignlab.com/xhtml/images/our-work/pic2.jpg" alt="" width="32%"
+                        class="px-1 hvr-shrink"></a>
+
+
+
+                <a> <img src="https://autocare.dexignlab.com/xhtml/images/our-work/pic3.jpg" alt="" width="32%"
+                        class="px-1 hvr-shrink"></a>
+
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+        <div class="row bg-dark px-5 py-1 pb-5 mb-5">
+            <div class="col-1">
+            </div>
+            <div class="col-xl-10 col-md-10 py-2 px-2">
+                <a> <img src="https://autocare.dexignlab.com/xhtml/images/our-work/pic4.jpg" alt="" width="32%"
+                        class="px-1 hvr-shrink"></a>
+
+
+
+                <a> <img src="https://autocare.dexignlab.com/xhtml/images/our-work/pic5.jpg" alt="" width="32%"
+                        class="px-1 hvr-shrink"></a>
+
+
+                <a> <img src="https://autocare.dexignlab.com/xhtml/images/our-work/pic6.jpg" alt="" width="32%"
+                        class="px-1 hvr-shrink"></a>
+
+            </div>
+        </div>
+    </section>
+    <!-- 5th section -->
+    <section>
+        <div class="row py-3 px-5">
+            <h1 class="text-center text-dark"> OUR SERVICES</h1>
+            <h5 class="text-center text-info"><i class="fa-solid fa-pallet" style="color: #FFD43B;"></i><i
+                    class="fa-solid fa-pallet" style="color: #FFD43B;"></i><i class="fa-solid fa-pallet"
+                    style="color: #FFD43B;"></i><i class="fa-solid fa-pallet" style="color: #FFD43B;"></i><i
+                    class="fa-solid fa-pallet" style="color: #FFD43B;"></i><i class="fa-solid fa-circle fa-xl"
+                    style="color: #fd0808;"></i><i class="fa-solid fa-pallet" style="color: #FFD43B;"></i><i
+                    class="fa-solid fa-pallet" style="color: #FFD43B;"></i><i class="fa-solid fa-pallet"
+                    style="color: #FFD43B;"></i><i class="fa-solid fa-pallet" style="color: #FFD43B;"></i><i
+                    class="fa-solid fa-pallet" style="color: #FFD43B;"></i></h5>
+
+            <p class="text-dark text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias
+                consequatur
+                dignissimos facilis, magni accusantium sint rem a! Sed doloremque voluptates quisquam illum, error
+                corrupti ad enim molestiae neque beatae recusandae sequi ut accusamus rem eum magni perferendis sint
+                illo deserunt!</p>
+
+        </div>
+        <div class="row py-1">
+            <div class="col-xl-1 col-md-1"></div>
+            <div class="col-xl-10 col-md-10 px-5 ">
+                <div class="row px-5 py-1">
+                    <div class="col-xl-4 col-md-4 px-5 py-1">
+                        <div class="card hvr-pulse" style="width: 18rem;">
+                            <div class="card-body text-center">
+                                <h1><i class="fa-solid fa-fan fa-2xl py-5 px-4 bg-light rounded-square"
+                                        style="color: #fa0522;"></i></h1><br>
+                                <h4 class="card-title">AIR CONDITIONING</h4>
+                                <p>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Lorem ipsum dolor sit amet,
+                                    consectetuer adipiscing elit, sed diam nonummy nibh euismod
+
+                                </h6>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 px-5 py-1">
+                        <div class="card hvr-pulse" style="width: 18rem;">
+                            <div class="card-body text-center">
+                                <h1><i class="fa-solid fa-car fa-2xl py-5 px-4 bg-light rounded-square"
+                                        style="color: #fa0522;"></i></h1><br>
+                                <h4 class="card-title">BRAKE REPAIR</h4>
+                                <p>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Lorem ipsum dolor sit amet,
+                                    consectetuer adipiscing elit, sed diam nonummy nibh euismod
+
+                                </h6>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 px-5 py-1">
+                        <div class="card hvr-pulse" style="width: 18rem;">
+                            <div class="card-body text-center">
+                                <h1><i class="fa-solid fa-thumbs-up fa-2xl py-5 px-4 bg-light rounded-square"
+                                        style="color: #fa0522;"></i></h1><br>
+                                <h4 class="card-title">LUBE, OIL AND FILTERS
+                                </h4>
+                                <p>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Lorem ipsum dolor sit amet,
+                                    consectetuer adipiscing elit, sed diam nonummy nibh euismod
+
+                                </h6>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="row py-1">
+            <div class="col-1"></div>
+            <div class="col-xl-10 col-md-10 px-5 ">
+                <div class="row px-5 py-1">
+                    <div class="col-xl-4 col-md-4 px-5 py-1">
+                        <div class="card hvr-pulse" style="width: 18rem;">
+                            <div class="card-body text-center">
+                                <h1><i class="fa-solid fa-trophy fa-2xl py-5 px-4 bg-light rounded-square"
+                                        style="color: #fa0522;"></i></h1><br>
+                                <h4 class="card-title">BELTS AND HOSES</h4>
+                                <p>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Lorem ipsum dolor sit amet,
+                                    consectetuer adipiscing elit, sed diam nonummy nibh euismod
+
+                                </h6>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 px-5 py-1">
+                        <div class="card hvr-pulse" style="width: 18rem;">
+                            <div class="card-body text-center">
+                                <h1><i class="fa-solid fa-gear fa-2xl py-5 px-4 bg-light rounded-square"
+                                        style="color: #fa0522;"></i></h1><br>
+                                <h4 class="card-title">ENGINE DIAGNOSTICS</h4>
+                                <p>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Lorem ipsum dolor sit amet,
+                                    consectetuer adipiscing elit, sed diam nonummy nibh euismod
+
+                                </h6>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 px-5 py-1">
+                        <div class="card hvr-pulse" style="width: 18rem;">
+                            <div class="card-body text-center">
+                                <h1><i class="fa-solid fa-truck-monster fa-2xl py-5 px-4 bg-light rounded-square"
+                                        style="color: #fa0522;"></i></h1><br>
+                                <h4 class="card-title">TIRE AND WHEEL SERVICES</h4>
+                                <p>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Lorem ipsum dolor sit amet,
+                                    consectetuer adipiscing elit, sed diam nonummy nibh euismod
+
+                                </h6>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <br><br>
+    </section>
+    <!-- 6th section -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-md-4">
+                    <div class="card text-bg-primary mb-3 hvr-float-shadow">
+                        <div class="card-body m-3">
+                            <h5 class="card-title px-3"><i class="fa-solid fa-truck-pickup fa-2xl"
+                                    style="color:red;"></i><b class="fs-3 px-3">FREE HIPPING</b></h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+                                quidem!</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="card text-bg-primary mb-3 hvr-float-shadow">
+
+                        <div class="card-body m-3">
+                            <h5 class="card-title px-2"><i class="fa-solid fa-bag-shopping fa-2xl"
+                                    style="color: red;"></i><b class="fs-3 px-2">WAREHOUSE PRICES</b></h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="card text-bg-primary mb-3 hvr-float-shadow">
+
+                        <div class="card-body m-3">
+                            <h5 class="card-title px-2"><i class="fa-solid fa-gear fa-2xl" style="color: red;"></i><b
+                                    class="fs-3 px-2">SECURE SHOPPING</b></h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div> <br><br><br>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row ">
+                <h1 class="text-center text-dark">MEET OUR TEEM</h1>
+                <h5 class="text-center text-info"><i class="fa-solid fa-pallet" style="color: #FFD43B;"></i><i
+                        class="fa-solid fa-pallet" style="color: #FFD43B;"></i><i class="fa-solid fa-pallet"
+                        style="color: #FFD43B;"></i><i class="fa-solid fa-pallet" style="color: #FFD43B;"></i><i
+                        class="fa-solid fa-pallet" style="color: #FFD43B;"></i><i class="fa-solid fa-circle fa-xl"
+                        style="color: #fd0808;"></i><i class="fa-solid fa-pallet" style="color: #FFD43B;"></i><i
+                        class="fa-solid fa-pallet" style="color: #FFD43B;"></i><i class="fa-solid fa-pallet"
+                        style="color: #FFD43B;"></i><i class="fa-solid fa-pallet" style="color: #FFD43B;"></i><i
+                        class="fa-solid fa-pallet" style="color: #FFD43B;"></i></h5>
+
+                <p class="text-dark text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias
+                    consequatur
+                    dignissimos facilis, magni accusantium sint rem a! Sed doloremque voluptates quisquam illum, error
+                    corrupti ad enim molestiae neque beatae recusandae sequi ut accusamus rem eum magni perferendis sint
+                    illo deserunt!</p>
+
+                <div class="col-xl-4 col-md-4 ms-5 mt-5">
+                    <div class="ih-item square colored effect3 bottom_to_top"><a href="#">
+                            <div class="img"><img src="https://autocare.dexignlab.com/xhtml/images/our-team/pic1.jpg"
+                                    alt="img"></div>
+                            <div class="info">
+                                <h3 class="mt-2"><i class="fa-brands fa-facebook fa-lg m-1"
+                                        style="color: #edf1f2;"></i><i class="fa-brands fa-twitter fa-lg m-1"
+                                        style="color: #faf7f7;"></i><i class="fa-brands fa-instagram fa-lg m-1"
+                                        style="color: #ffffff;"></i>
+                                    <i class="fa-brands fa-linkedin fa-lg" style="color: #fafcff;"></i>
+                                </h3>
+                            </div>
+                        </a>
+                    </div>
+                    <h5 class="text-center me-5 pe-5 mt-1">Nashid Martines</h5>
+                    <p class="text-center me-5 pe-5">Director</p>
+
+                </div>
+                <div class="col-xl-3 col-md-3 me-5 mt-5">
+                    <div class="ih-item square colored effect3 bottom_to_top"><a href="#">
+                            <div class="img"><img src="https://autocare.dexignlab.com/xhtml/images/our-team/pic2.jpg"
+                                    alt="img"></div>
+                            <div class="info">
+                                <h3 class="mt-2"><i class="fa-brands fa-facebook fa-lg m-1"
+                                    style="color: #edf1f2;"></i><i class="fa-brands fa-twitter fa-lg m-1"
+                                    style="color: #faf7f7;"></i><i class="fa-brands fa-instagram fa-lg m-1"
+                                    style="color: #ffffff;"></i>
+                                <i class="fa-brands fa-linkedin fa-lg" style="color: #fafcff;"></i>
+                            </h3>
+                            </div>
+                        </a>
+                    </div>
+                    <h5 class="text-center ms-5 pe-5 mt-1 ps-4">konne Backfield</h5>
+                    <p class="text-center ms-5 pe-5 ps-3">Designer</p>
+                </div>
+                <div class="col-xl-3 col-md-3 ms-5 mt-5">
+                    <div class="ih-item square colored effect3 bottom_to_top"><a href="#">
+                            <div class="img"><img src="https://autocare.dexignlab.com/xhtml/images/our-team/pic3.jpg"
+                                    alt="img"></div>
+                            <div class="info">
+                                <h3 class="mt-2"><i class="fa-brands fa-facebook fa-lg m-1"
+                                    style="color: #edf1f2;"></i><i class="fa-brands fa-twitter fa-lg m-1"
+                                    style="color: #faf7f7;"></i><i class="fa-brands fa-instagram fa-lg m-1"
+                                    style="color: #ffffff;"></i>
+                                <i class="fa-brands fa-linkedin fa-lg" style="color: #fafcff;"></i>
+                            </h3>
+                            </div>
+                        </a>
+                    </div>
+                    <h5 class="text-center ms-5 pe-5 mt-1 ps-3">Hackson Willingham</h5>
+                    <p class="text-center ms-5 pe-5" ps-3>Devloper</p>
+                </div>
+            </div>
+            <div class="row m-3">
+                <div class="col-1"></div>
+                <div class="col-xl-4 col-md-4 ps-5 ms-4">
+                    <div class="col-xl-3 col-md-3 ms-5">
+                        <div class="ih-item square colored effect3 bottom_to_top"><a href="#">
+                                <div class="img"><img
+                                        src="https://autocare.dexignlab.com/xhtml/images/our-team/pic4.jpg" alt="img">
+                                </div>
+                                <div class="info">
+                                    <h3 class="mt-2"><i class="fa-brands fa-facebook fa-lg m-1"
+                                        style="color: #edf1f2;"></i><i class="fa-brands fa-twitter fa-lg m-1"
+                                        style="color: #faf7f7;"></i><i class="fa-brands fa-instagram fa-lg m-1"
+                                        style="color: #ffffff;"></i>
+                                    <i class="fa-brands fa-linkedin fa-lg" style="color: #fafcff;"></i>
+                                </h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <h5 class="text-center ms-5 mt-1 ps-3">konne Backfield</h5>
+                    <p class="text-center ms-5">Manager</p>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="col-xl-3 col-md-3 ms-5 px-5">
+                        <div class="ih-item square colored effect3 bottom_to_top"><a href="#">
+                                <div class="img"><img
+                                        src="https://autocare.dexignlab.com/xhtml/images/our-team/pic1.jpg" alt="img">
+                                </div>
+                                <div class="info">
+                                    <h3 class="mt-2"><i class="fa-brands fa-facebook fa-lg m-1"
+                                        style="color: #edf1f2;"></i><i class="fa-brands fa-twitter fa-lg m-1"
+                                        style="color: #faf7f7;"></i><i class="fa-brands fa-instagram fa-lg m-1"
+                                        style="color: #ffffff;"></i>
+                                    <i class="fa-brands fa-linkedin fa-lg" style="color: #fafcff;"></i>
+                                </h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <h5 class="text-center ms-5 mt-1 ps-5">Nashid Martines</h5>
+                    <p class="text-center ms-5 ps-5">Mechanic</p>
+
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+</main>
+{%endblock%}

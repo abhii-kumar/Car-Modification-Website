@@ -1,0 +1,93 @@
+{%extends 'hefo.html'%}
+{%load static%}
+{%block content%}
+<div class="container-fluid">
+    <div class="row">
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6943.521658160021!2d75.04900514278805!3d29.52332985076024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39114ddbe39e79db%3A0x637a4f8a42794357!2sKanganpur%2C%20Sirsa%2C%20Haryana%20125055!5e0!3m2!1sen!2sin!4v1722668503475!5m2!1sen!2sin"
+            width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" class="px-1"></iframe>
+            <p><a href="/index2" class="text-dark text-center ms-5 fs-5">Home</a>>Appoinment</p>
+
+        <p class="text-center fs-1 mt-5">BOOK AN APPOINTMENT</p><br><br>
+        <p class="text-center fs-5 fw-light">We are one of the leading auto repair shops serving customers in
+            Tucson.<br>All
+            mechanic services are performed by highly qualified mechanics.</p>
+
+        <div class="col-xl-1 col-md-1"></div>
+        <div class="col-xl-10 col-md-10">
+
+            <form action="{% url 'insertapponment' %}" method="post">
+                {%csrf_token%}
+                <div class="container-fluid">
+                    <div class="row m-5">
+                        <div class="col-md-4 col-xl-4 ">
+                            <h6 class="border border-secondary p-2 bg-dark-subtle">VEHICLE YEAR</h6>
+                            <input type="number" class="form-control fs-5" id="exampleInputPassword1"
+                                placeholder="Vickhel year..." Name="vehicle_year">
+                        </div>
+                        <div class="col-md-4 col-xl-4 ">
+                            <h6 class="border border-secondary p-2 bg-dark-subtle">VEHICLE MAKE</h6>
+                            <input type="text" class="form-control fs-5" id="exampleInputPassword1"
+                                placeholder="Vickhel make..." Name="vehicle_make">
+                        </div>
+                        <div class="col-md-4 col-xl-4 ">
+                            <h6 class="border border-secondary p-2 bg-dark-subtle">VEHICLE MILEAGE</h6>
+                            <input type="text" class="form-control fs-5" id="exampleInputPassword1"
+                                placeholder="Vickhel MILEAGE..." Name="vehicle_mileage">
+                        </div>
+
+                    </div>
+                    <div class="row m-5">
+                        <div class="col-xl-6 col-md-6">
+                            <h6 class="border border-secondary p-2 bg-dark-subtle">PREFFERED DATE OF APPOINTMENT</h6>
+                            <input type="date" class="form-control fs-5" id="exampleInputPassword1"
+                                placeholder="Vickhel MILEAGE..." Name="date"><br><br>
+
+                            <h6 class="border border-secondary p-2 bg-dark-subtle">PREFFERED time Frame</h6>
+                            <select class="form-control fs-5" id="exampleInputPassword1" name="time">
+                                <option value>Choose...</option>
+                                <option value="9:00 AM-10:00 AM">9:00 AM-10:00 AM</option>
+                                <option value="10:00 AM-11:00 AM">10:00 AM-11:00 AM</option>
+                                <option value="11:00 AM-12:00 AM">11:00 AM-12:00 AM</option>
+                                <option value="12:00 AM-01:00 PM">12:00 AM-01:00 PM</option>
+                                <option value="01:00 AM-02:00 PM">01:00 AM-02:00 PM</option>
+                                <option value="02:00 AM-03:00 PM">02:00 AM-03:00 PM</option>
+                                <option value="03:00 AM-04:00 PM">03:00 AM-04:00 PM</option>
+                            </select><br><br>
+
+                            <h6 class="border border-secondary p-2 bg-dark-subtle">SELECT SERVICES NEEDED</h6>
+                            <input type="checkbox" class="m-3 fs-5" name="service" id="AIR CONDITIONING" value="AIR CONDITIONING">AIR CONDITIONING
+                            <input type="checkbox" class="m-3 fs-5" name="service" id="BRAKES" value="BRAKES">BRAKES
+                            <input type="checkbox" class="m-3 fs-5" name="service" id="BATTERY" value="BATTERY">BATTERY <br>
+                            <input type="checkbox" class="m-3 fs-5" name="service" id="ENGINE DIAGNOSTICS" value="ENGINE DIAGNOSTICS">ENGINE DIAGNOSTICS
+                            <input type="checkbox" class="m-3 fs-5" name="service" id="HEATING & COOLING" value="HEATING & COOLING">HEATING & COOLING <br>
+                            <input type="checkbox" class="m-3 fs-5" name="service" id="WHEEL ALIGNMENT" value="WHEEL ALIGNMENT">WHEEL ALIGNMENT
+                            <input type="checkbox" class="m-3 fs-5" name="service" id="TRANSMISSION REPAIR" value="TRANSMISSION REPAIR">TRANSMISSION REPAIR
+                            <input type="checkbox" class="m-3 fs-5" name="service" id="OTHERS" value="OTHERS">OTHERS
+                        </div>
+                        <div class="col-xl-6 col-md-6">
+                            <h4 class="bg-secondary p-1 text-light">CONTACT DETAILS</h4>
+                            <input type="text" class="form-control fs-4" id="exampleInputPassword1"
+                                placeholder="Your Name*" Name="Name2"><br>
+                            <input type="email" class="form-control fs-4 mt-2" id="exampleInputPassword1"
+                                placeholder="Your Email*" Name="email2"><br>
+                            <input type="tel" class="form-control fs-4 mt-2" id="exampleInputPassword1"
+                                placeholder="Your Number*" Name="number2"><br>
+                            <input type="textarea" class="form-control fs-4" id="exampleInputPassword1"
+                                placeholder="Additional Quesstions or Comment*" Name="message2"><br><br>
+                            <button type="submit"
+                                class=" form-control btn btn-outline-light bg-primary mt-2 fs-4 mb-3"><b>SUBMIT
+                                    NOW</b></button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-xl-1 col-md-1"></div>
+    </div>
+</div>
+
+
+{%endblock%}
